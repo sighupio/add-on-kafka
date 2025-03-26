@@ -1,6 +1,6 @@
 # Strimzi Cluster Operator
 
-<!-- <KFD-DOCS> -->
+<!-- <SD-DOCS> -->
 
 Strimzi provides a way to run an Apache Kafka® cluster on Kubernetes or OpenShift in various deployment configurations.
 See our [Strimzi website][strimzi-website] for more details about the project.
@@ -40,4 +40,4 @@ kustomize build . | kubectl apply -f -
 [strimzi-website]: https://strimzi.io/
 [prometheus-operator]: https://github.com/sighupio/fury-kubernetes-monitoring/tree/main/katalog/prometheus-operator
 
-<!-- </KFD-DOCS> -->
+<!-- </SD-DOCS> -->

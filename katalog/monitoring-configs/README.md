@@ -1,6 +1,6 @@
 # Monitoring Configs
 
-<!-- <KFD-DOCS> -->
+<!-- <SD-DOCS> -->
 
 This package provides the monitoring configurations for the Strimzi Kafka Operator.
 
@@ -8,7 +8,7 @@ This package provides the monitoring configurations for the Strimzi Kafka Operat
 
 - Kubernetes >= `1.16.0`
 - Kustomize = `v3.5.4`
-- [Kubernetes Fury Monitoring][kubernetes-fury-monitoring]
+- [SIGHUP Monitoring][kubernetes-fury-monitoring]
 
 ## Deployment
 
@@ -23,6 +23,6 @@ kustomize build . | kubectl apply -f -
 
 <!-- Links -->
 
-[Kubernetes Fury Monitoring]: https://github.com/sighupio/fury-kubernetes-monitoring
+[SIGHUP Monitoring]: https://github.com/sighupio/fury-kubernetes-monitoring
 
-<!-- </KFD-DOCS> -->
+<!-- </SD-DOCS> -->
