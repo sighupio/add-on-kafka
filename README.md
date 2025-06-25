@@ -7,7 +7,7 @@
   Kafka Add-On Module
 </h1>
 
-![Release](https://img.shields.io/badge/Latest%20Release-v0.1.0-blue)
+![Release](https://img.shields.io/badge/Latest%20Release-v0.2.0-blue)
 ![License](https://img.shields.io/github/license/sighupio/add-on-kafka?label=License)
 ![Slack](https://img.shields.io/badge/slack-@kubernetes/fury-yellow.svg?logo=slack&label=Slack)
 
@@ -29,8 +29,8 @@ The following packages are included in the SIGHUP Distribution Logging katalog:
 
 | Package                                                      | Version   | Description                                                                                                                                          |
 |--------------------------------------------------------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [strimzi-cluster-operator](katalog/strimzi-cluster-operator) | `v0.31.1` | Strimzi provides a way to run an Apache Kafka® cluster on Kubernetes in various deployment configurations, deployed in cluster-wide configuration.   |
-| [monitoring-configs](katalog/monitoring-configs)             | `-`       | Monitoring configurations for Strimzi Kafka Operator                                                                                                 |
+| [strimzi-cluster-operator](katalog/strimzi-cluster-operator) | `v0.42.0` | Strimzi provides a way to run an Apache Kafka® cluster on Kubernetes in various deployment configurations, deployed in cluster-wide configuration.   |
+| [monitoring-configs](katalog/monitoring-configs)             | `v0.2.0`  | Monitoring configurations for Strimzi Kafka Operator                                                                                                 |
 
 Click on each package to see its full documentation.
 
@@ -38,9 +38,10 @@ Click on each package to see its full documentation.
 
 | Kubernetes Version |   Compatibility    | Notes                                               |
 |--------------------|:------------------:|-----------------------------------------------------|
-| `1.22.x`           | :white_check_mark: | No known issues                                     |
-| `1.23.x`           | :white_check_mark: | No known issues                                     |
-| `1.24.x`           | :white_check_mark: | No known issues                                     |
+| `1.29.x`           | :white_check_mark: | No known issues                                     |
+| `1.30.x`           | :white_check_mark: | No known issues                                     |
+| `1.31.x`           | :white_check_mark: | No known issues                                     |
+| `1.32.x`           | :white_check_mark: | No known issues                                     |
 
 Check the [compatibility matrix][compatibility-matrix] for additional information about previous releases of the modules.
 
@@ -63,9 +64,9 @@ changes that can be introduced by the Strimzi operator.
 ```yaml
 bases:
   - name: kafka/strimzi-cluster-operator
-    version: "v0.1.0"
+    version: "v0.2.0"
   - name: kafka/monitoring-configs
-    version: "v0.1.0"
+    version: "v0.2.0"
 ```
 
 > See `furyctl` [documentation][furyctl-repo] for additional details about `Furyfile.yml` format.
