@@ -2,7 +2,7 @@
 
 This example folder will deploy a Kafka cluster with the following characteristics:
 
-- 3 Zookeeper nodes
+- 3 KRaft controller nodes
 - 3 Kafka nodes
 - 1 Entity operator pod
 - 1 Kafka Exporter pod

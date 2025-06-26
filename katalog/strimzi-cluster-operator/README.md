@@ -8,7 +8,7 @@ See our [Strimzi website][strimzi-website] for more details about the project.
 ## Requirements
 
 - Kubernetes >= `1.16.0`
-- Kustomize = `v3.5.4`
+- Kustomize >= `v5.0.0`
 - [prometheus-operator][prometheus-operator]
 
 > Prometheus Operator is necessary since we configure a `PodMonitor` to make
