@@ -25,7 +25,7 @@ All the components are deployed in the `kafka-operator` namespace in the cluster
 
 ## Packages
 
-The following packages are included in the SIGHUP Distribution Logging katalog:
+The following packages are included in the SIGHUP Distribution Kafka katalog:
 
 | Package                                                      | Version   | Description                                                                                                                                          |
 |--------------------------------------------------------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -52,7 +52,7 @@ changes that can be introduced by the Strimzi operator.
 ### Prerequisites
 
 | Tool                        | Version   | Description                                                                                                                                                    |
-|-----------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------------------------|--------./vendor/katalog/kafka---|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [furyctl][furyctl-repo]     | `>=0.6.0` | The recommended tool to download and manage SD modules and their packages. To learn more about `furyctl` read the [official documentation][furyctl-repo].     |
 | [kustomize][kustomize-repo] | `>=5.0.0` | Packages are customized using `kustomize`. To learn how to create your customization layer with `kustomize`, please refer to the [repository][kustomize-repo]. |
 
@@ -98,11 +98,11 @@ a complete Kafka Cluster using the operator.
 <!-- Links -->
 
 [strimzi-page]: https://strimzi.io
-[kfd-repo]: https://github.com/sighupio/fury-distribution
+[kfd-repo]: https://github.com/sighupio/distribution
 [furyctl-repo]: https://github.com/sighupio/furyctl
 [kustomize-repo]: https://github.com/kubernetes-sigs/kustomize
-[sd-docs]: https://docs.kubernetesfury.com/docs/distribution/
-[compatibility-matrix]: https://github.com/sighupio/fury-kubernetes-kafka/blob/main/docs/COMPATIBILITY_MATRIX.md
+[sd-docs]: https://docs.sighup.io/docs/distribution/
+[compatibility-matrix]: https://github.com/sighupio/add-on-kafka/blob/main/docs/COMPATIBILITY_MATRIX.md
 
 <!-- </SD-DOCS> -->
 
@@ -114,7 +114,7 @@ Before contributing, please read first the [Contributing Guidelines](docs/CONTRI
 
 ### Reporting Issues
 
-In case you experience any problem with the module, please [open a new issue](https://github.com/sighupio/fury-kubernetes-kafka/issues/new/choose).
+In case you experience any problem with the module, please [open a new issue](https://github.com/sighupio/add-on-kafka/issues/new/choose).
 
 ## License
 
