@@ -52,7 +52,7 @@ changes that can be introduced by the Strimzi operator.
 ### Prerequisites
 
 | Tool                        | Version   | Description                                                                                                                                                    |
-|-----------------------------|--------./vendor/katalog/kafka---|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [furyctl][furyctl-repo]     | `>=0.6.0` | The recommended tool to download and manage SD modules and their packages. To learn more about `furyctl` read the [official documentation][furyctl-repo].     |
 | [kustomize][kustomize-repo] | `>=5.0.0` | Packages are customized using `kustomize`. To learn how to create your customization layer with `kustomize`, please refer to the [repository][kustomize-repo]. |
 
@@ -72,7 +72,7 @@ bases:
 
 2. Execute `furyctl vendor -H` to download the packages
 
-3. Inspect the download packages under `./vendor/katalog/logging`.
+3. Inspect the download packages under `./vendor/katalog/kafka`.
 
 4. Define a `kustomization.yaml` that includes the `./vendor/katalog/kafka` directory as resource.
 
