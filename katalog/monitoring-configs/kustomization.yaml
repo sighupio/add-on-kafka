@@ -23,9 +23,9 @@ configMapGenerator:
   - name: kafka-operator
     files:
       - strimzi-operators.json
-  - name: kafka-zookeeper
+  - name: kafka-kraft
     files:
-      - strimzi-zookeeper.json
+      - strimzi-kraft.json
   - name: kafka-exporter
     files:
       - strimzi-kafka-exporter.json

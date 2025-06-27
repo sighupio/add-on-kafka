@@ -7,7 +7,7 @@ This package provides the monitoring configurations for the Strimzi Kafka Operat
 ## Requirements
 
 - Kubernetes >= `1.16.0`
-- Kustomize = `v3.5.4`
+- Kustomize >= `v3.5.4`
 - [SIGHUP Monitoring][module-monitoring]
 
 ## Deployment
