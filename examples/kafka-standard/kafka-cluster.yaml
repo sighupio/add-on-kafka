@@ -7,6 +7,9 @@ apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:
   name: sighup-kafka-cluster
+  metadata: 
+    strimzi.io/kraft: enabled
+    strimzi.io/node-pools: enabled
 spec:
   kafkaExporter:
     groupRegex: .*
