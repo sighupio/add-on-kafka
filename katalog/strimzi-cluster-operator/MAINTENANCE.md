@@ -4,14 +4,14 @@ This document describes how to maintain the Strimzi Operator.
 
 Search for the latest version of the Kafka Operator here : [Strimzi Releases](https://github.com/strimzi/strimzi-kafka-operator/releases)
 
-Get the manifests for the selected version, for example the version `0.45.0`:
+Get the manifests for the selected version, for example the version `0.46.0`:
 
-- strimzi-cluster-operator-0.45.0.yaml
+- strimzi-cluster-operator-0.46.0.yaml
 
 Overwrite the namespace with `kafka-operator` using (on MacOs) this command:
 
 ```bash
-sed -i '' 's/namespace: .*/namespace: kafka-operator/' strimzi-cluster-operator-0.45.0.yaml
+sed -i '' 's/namespace: .*/namespace: kafka-operator/' strimzi-cluster-operator-0.46.0.yaml
 ```
 
 Then, check the differences with the current files:

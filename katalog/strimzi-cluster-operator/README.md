@@ -8,7 +8,7 @@ See our [Strimzi website][strimzi-website] for more details about the project.
 ## Requirements
 
 - Kubernetes >= `1.16.0`
-- Kustomize >= `v5.0.0`
+- Kustomize >= `v5.6.0`
 - [prometheus-operator][prometheus-operator]
 
 > Prometheus Operator is necessary since we configure a `PodMonitor` to make
@@ -16,12 +16,12 @@ See our [Strimzi website][strimzi-website] for more details about the project.
 
 ## Image repository and tag
 
-* Strimzi Operator image: `registry.sighup.io/fury/strimzi/operator:0.45.0`
-* Strimzi Kafka images: `registry.sighup.io/fury/strimzi/kafka:0.45.0-kafka-{3.8.0,3.8.1,3.9.0}`
+* Strimzi Operator image: `registry.sighup.io/fury/strimzi/operator:0.46.0`
+* Strimzi Kafka images: `registry.sighup.io/fury/strimzi/kafka:0.46.0-kafka-{3.9.0,4.0.0}`
 * Strimzi Kafka bridge: `registry.sighup.io/fury/strimzi/kafka-bridge:0.22.1`
-* Strimzi JMXTrans: `registry.sighup.io/fury/strimzi/jmxtrans:0.45.0`
-* Strimzi Kaniko executor: `registry.sighup.io/fury/strimzi/kaniko-executor:0.45.0`
-* Strimzi Maven builder: `registry.sighup.io/fury/strimzi/maven-builder:0.45.0`
+* Strimzi JMXTrans: `registry.sighup.io/fury/strimzi/jmxtrans:0.46.0`
+* Strimzi Kaniko executor: `registry.sighup.io/fury/strimzi/kaniko-executor:0.46.0`
+* Strimzi Maven builder: `registry.sighup.io/fury/strimzi/maven-builder:0.46.0`
 
 ## Configuration
 
