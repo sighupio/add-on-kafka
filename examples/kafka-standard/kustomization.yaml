@@ -13,3 +13,5 @@ resources:
   - kafka-cluster.yaml
   - pod-monitor.yaml
   - topics.yaml
+  - node-pools.yaml
+  - controller-node-pools.yaml

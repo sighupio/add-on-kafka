@@ -7,7 +7,7 @@
   Kafka Add-On Module
 </h1>
 
-![Release](https://img.shields.io/badge/Latest%20Release-v0.2.0-blue)
+![Release](https://img.shields.io/badge/Latest%20Release-v0.3.0-blue)
 ![License](https://img.shields.io/github/license/sighupio/add-on-kafka?label=License)
 ![Slack](https://img.shields.io/badge/slack-@kubernetes/fury-yellow.svg?logo=slack&label=Slack)
 
@@ -25,12 +25,12 @@ All the components are deployed in the `kafka-operator` namespace in the cluster
 
 ## Packages
 
-The following packages are included in the SIGHUP Distribution Logging katalog:
+The following packages are included in the SIGHUP Distribution Kafka katalog:
 
 | Package                                                      | Version   | Description                                                                                                                                          |
 |--------------------------------------------------------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [strimzi-cluster-operator](katalog/strimzi-cluster-operator) | `v0.42.0` | Strimzi provides a way to run an Apache Kafka® cluster on Kubernetes in various deployment configurations, deployed in cluster-wide configuration.   |
-| [monitoring-configs](katalog/monitoring-configs)             | `v0.2.0`  | Monitoring configurations for Strimzi Kafka Operator                                                                                                 |
+| [strimzi-cluster-operator](katalog/strimzi-cluster-operator) | `v0.45.0` | Strimzi provides a way to run an Apache Kafka® cluster on Kubernetes in various deployment configurations, deployed in cluster-wide configuration.   |
+| [monitoring-configs](katalog/monitoring-configs)             | `v0.3.0`  | Monitoring configurations for Strimzi Kafka Operator                                                                                                 |
 
 Click on each package to see its full documentation.
 
@@ -38,7 +38,6 @@ Click on each package to see its full documentation.
 
 | Kubernetes Version |   Compatibility    | Notes                                               |
 |--------------------|:------------------:|-----------------------------------------------------|
-| `1.29.x`           | :white_check_mark: | No known issues                                     |
 | `1.30.x`           | :white_check_mark: | No known issues                                     |
 | `1.31.x`           | :white_check_mark: | No known issues                                     |
 | `1.32.x`           | :white_check_mark: | No known issues                                     |
@@ -55,7 +54,7 @@ changes that can be introduced by the Strimzi operator.
 | Tool                        | Version   | Description                                                                                                                                                    |
 |-----------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [furyctl][furyctl-repo]     | `>=0.6.0` | The recommended tool to download and manage SD modules and their packages. To learn more about `furyctl` read the [official documentation][furyctl-repo].     |
-| [kustomize][kustomize-repo] | `>=3.5.3` | Packages are customized using `kustomize`. To learn how to create your customization layer with `kustomize`, please refer to the [repository][kustomize-repo]. |
+| [kustomize][kustomize-repo] | `>=5.6.0` | Packages are customized using `kustomize`. To learn how to create your customization layer with `kustomize`, please refer to the [repository][kustomize-repo]. |
 
 ### Deployment
 
@@ -64,16 +63,16 @@ changes that can be introduced by the Strimzi operator.
 ```yaml
 bases:
   - name: kafka/strimzi-cluster-operator
-    version: "v0.2.0"
+    version: "v0.3.0"
   - name: kafka/monitoring-configs
-    version: "v0.2.0"
+    version: "v0.3.0"
 ```
 
 > See `furyctl` [documentation][furyctl-repo] for additional details about `Furyfile.yml` format.
 
 2. Execute `furyctl vendor -H` to download the packages
 
-3. Inspect the download packages under `./vendor/katalog/logging`.
+3. Inspect the download packages under `./vendor/katalog/kafka`.
 
 4. Define a `kustomization.yaml` that includes the `./vendor/katalog/kafka` directory as resource.
 
@@ -99,11 +98,11 @@ a complete Kafka Cluster using the operator.
 <!-- Links -->
 
 [strimzi-page]: https://strimzi.io
-[kfd-repo]: https://github.com/sighupio/fury-distribution
+[kfd-repo]: https://github.com/sighupio/distribution
 [furyctl-repo]: https://github.com/sighupio/furyctl
 [kustomize-repo]: https://github.com/kubernetes-sigs/kustomize
-[sd-docs]: https://docs.kubernetesfury.com/docs/distribution/
-[compatibility-matrix]: https://github.com/sighupio/fury-kubernetes-kafka/blob/main/docs/COMPATIBILITY_MATRIX.md
+[sd-docs]: https://docs.sighup.io/docs/distribution/
+[compatibility-matrix]: https://github.com/sighupio/add-on-kafka/blob/main/docs/COMPATIBILITY_MATRIX.md
 
 <!-- </SD-DOCS> -->
 
@@ -115,7 +114,7 @@ Before contributing, please read first the [Contributing Guidelines](docs/CONTRI
 
 ### Reporting Issues
 
-In case you experience any problem with the module, please [open a new issue](https://github.com/sighupio/fury-kubernetes-kafka/issues/new/choose).
+In case you experience any problem with the module, please [open a new issue](https://github.com/sighupio/add-on-kafka/issues/new/choose).
 
 ## License
 
