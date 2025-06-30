@@ -54,7 +54,7 @@ changes that can be introduced by the Strimzi operator.
 | Tool                        | Version   | Description                                                                                                                                                    |
 |-----------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [furyctl][furyctl-repo]     | `>=0.6.0` | The recommended tool to download and manage SD modules and their packages. To learn more about `furyctl` read the [official documentation][furyctl-repo].     |
-| [kustomize][kustomize-repo] | `>=5.0.0` | Packages are customized using `kustomize`. To learn how to create your customization layer with `kustomize`, please refer to the [repository][kustomize-repo]. |
+| [kustomize][kustomize-repo] | `>=5.6.0` | Packages are customized using `kustomize`. To learn how to create your customization layer with `kustomize`, please refer to the [repository][kustomize-repo]. |
 
 ### Deployment
 
