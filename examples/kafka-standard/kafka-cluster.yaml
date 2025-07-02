@@ -7,7 +7,7 @@ apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:
   name: sighup-kafka-cluster
-  metadata: 
+  annotations:
     strimzi.io/kraft: enabled
     strimzi.io/node-pools: enabled
 spec:
@@ -30,7 +30,7 @@ spec:
       initialDelaySeconds: 15
       timeoutSeconds: 5
   kafka:
-    version: 3.9.0
+    version: 4.0.0
     template:
       pod:
         affinity:
@@ -79,7 +79,7 @@ spec:
       offsets.topic.replication.factor: 3
       transaction.state.log.replication.factor: 3
       transaction.state.log.min.isr: 2
-    metadataVersion: 3.9-IV0
+    metadataVersion: 4.0-IV3
     metricsConfig:
       type: jmxPrometheusExporter
       valueFrom:
